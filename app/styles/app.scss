@@ -1,1 +1,36 @@
-@import 'ember-paper';
+$blue: #0064B9;
+$primary: $blue;
+$white-bis: hsl(0, 0, 98%);
+@import "ember-bootstrap/bootstrap";
+
+.nav {
+  background: $primary;
+}
+
+.navbar-brand{
+  font-weight: normal;
+  color: $white-bis;
+}
+
+.right-link {
+  padding: 15px 0 15px 15px;
+}
+
+.margin-top-2 {
+  margin-top: 2rem;
+}
+
+.table-header {
+  background: black;
+  color: white;
+}
+
+.back-blue {
+  background-color: #00C3C0;
+  color: $white-bis;
+}
+
+.sumbit-yellow {
+  background-color: #FFB236;
+  color: $white-bis;
+}

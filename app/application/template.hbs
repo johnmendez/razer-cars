@@ -1,0 +1,22 @@
+<div class="navbar navbar-static-top bg-primary">
+  <div class="container">
+    <div class="navbar__group pull-left">
+      <div class="navbar-header">
+        {{#link-to "index" class="navbar-brand"}}Razer Cars{{/link-to}}
+      </div>
+    </div>
+    <div class="navbar__group pull-right">
+      {{!-- <div class="navbar-header">
+        {{#link-to "index" class="navbar-brand"}}Home{{/link-to}}
+      </div> --}}
+      <div class="navbar-header">
+        {{#link-to "manufacturers" class="navbar-brand"}}All Manufacturers{{/link-to}}
+      </div>
+      <div class="navbar-header">
+        {{#link-to "manufacturers-new" class="navbar-brand right-link"}}Add Manufacturers{{/link-to}}
+      </div>
+    </div>
+  </div>
+</div>
+
+{{outlet}}
