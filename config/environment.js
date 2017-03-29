@@ -9,7 +9,7 @@ module.exports = function(environment) {
       host: 'https://punchstarter-api.herokuapp.com',
       namespace: 'ryan',
     },
-
+    // Add a DS object to config/environment.js with host and namespace for your collection (note that you will not have /basic in the api host or namespace)
     modulePrefix: 'razer-cars',
     environment: environment,
     rootURL: '/',
