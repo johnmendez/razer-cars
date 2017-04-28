@@ -1,6 +1,6 @@
 // Generate an application adapter
 // Configure with host and namespace from application configuration
-import DS from 'ember';
+import DS from 'ember-data';
 import config from 'razer-cars/config/environment';
 
 export default DS.JSONAPIAdapter.extend({
