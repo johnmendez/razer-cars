@@ -3,11 +3,11 @@
 module.exports = function(environment) {
   var ENV = {
     //  Add apiUrl to config/environment.js and import config where ever the apiUrl is needed
-    apiUrl: 'https://punchstarter-api.herokuapp.com/ryan/basic',
+    apiUrl: 'https://razerapi.herokuapp.com',
 
     DS: {
-      host: 'https://punchstarter-api.herokuapp.com',
-      namespace: 'ryan',
+      host: 'https://razerapi.herokuapp.com',
+      namespace: 'john-m',
     },
     // Add a DS object to config/environment.js with host and namespace for your collection (note that you will not have /basic in the api host or namespace)
     modulePrefix: 'razer-cars',
