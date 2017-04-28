@@ -11,4 +11,6 @@ export default DS.Model.extend({
   year: DS.attr('string'),
   // price
   price: DS.attr('string'),
+
+  brand: DS.belongsTo('brand'),
 });

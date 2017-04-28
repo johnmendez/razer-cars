@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-md-12">
+      <div class="panel panel-default clearfix">
+        <div class="panel-heading">
+          <h1>{{model.name}}</h1>
+        </div>
+        <div class="panel-body">
+          {{#link-to "manufacturer.car.new" class="btn btn-warning pull-right"}}Add New Car{{/link-to}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    {{#each model.cars as |car|}}
+      <div class="col col-md-4">
+        <div class="panel panel-default clearfix">
+          <div class="panel-heading">
+            <h1>{{car.year}} - {{car.name}}</h1>
+          </div>
+          <div class="panel-body">
+            <p>Horsepower - {{car.hp}}</p>
+            <p>Price - {{car.price}}</p>
+            {{#link-to "manufacturer.car.new" class="btn btn-warning pull-right"}}Add New Car{{/link-to}}
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
+
+{{outlet}}
