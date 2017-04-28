@@ -18,7 +18,7 @@ Router.map(function() {
     // Save model changes on form submit and redirect to manufacturer.car
     this.route('edit', { path: '/:brand_id/edit' });
     // manufacturer.car
-    this.route('car', { path: '/:id' }, function() {
+    this.route('car', { path: '/:brand_id' }, function() {
       // manufacturer.car.new
       this.route('new');
     });
