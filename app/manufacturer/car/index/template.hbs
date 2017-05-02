@@ -8,6 +8,7 @@
         <div class="panel-footer">
           <p>
             <button class="btn btn-danger" {{action 'destroy'}}>Delete</button>
+            {{#link-to "manufacturer.edit" model class="btn btn-primary"}}Edit Brand{{/link-to}}
             {{#link-to "manufacturer.car.new" class="btn btn-warning pull-right"}}Add New Car{{/link-to}}
           </p>
         </div>

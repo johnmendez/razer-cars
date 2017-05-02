@@ -1,0 +1,28 @@
+<div class="container">
+  {{#with (changeset model) as |formValues|}}
+    <form class="panel panel-default" {{action "save" formValues on="submit"}}>
+      <div class="panel-heading">
+        <h2 class="col-sm-offset-1">Editing {{model.name}}</h2>
+      </div>
+      <div class="form-horizontal margin-top-2" >
+        <div class="form-group">
+          <div class="col-sm-10 col-sm-offset-1">
+            {{input type="text" class="form-control" placeholder="Company Name" value=formValues.name}}
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-10 col-sm-offset-1">
+            {{input type="text" class="form-control" placeholder="ISO Country Code" value=formValues.country}}
+          </div>
+        </div>
+      </div>
+      <div class="panel-footer">
+        <p>
+          {{#link-to 'manufacturer.index' class="btn btn-lg back-blue col-md-offset-1"}}Back{{/link-to}}
+          <button type="submit" class="btn btn-lg sumbit-yellow">Sumbit</button>
+        </p>
+      </div>
+    </form>
+  {{/with}}
+</div>
+{{outlet}}
