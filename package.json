@@ -12,7 +12,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist johnmendez-21-razer-cars.surge.sh"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
